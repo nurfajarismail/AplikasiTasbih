@@ -2,71 +2,112 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
     xmlns:tools="http://schemas.android.com/tools"
-
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="bottom|center_horizontal"
     tools:context=".MainActivity">
 
 
     <TextView
+        android:gravity="center"
         android:id="@+id/hasil"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
         android:layout_gravity="center"
         android:text="33"
-        android:textSize="100dp" />
+        android:textSize="100dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <TableRow
+        android:layout_margin="20dp"
+        android:gravity="center"
         android:layout_width="match_parent"
-
-        android:layout_height="100dp"
-        android:layout_gravity="center">
-
+        android:layout_height="203dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="200dp">
 
         <Button
             android:id="@+id/btnKurang"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="135dp"
+            android:layout_height="175dp"
+            android:layout_margin="20dp"
             android:text="-"
-            android:textSize="50dp" />
+            android:textSize="50dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="275dp" />
 
         <Button
             android:id="@+id/btnTambah"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="135dp"
+            android:layout_height="175dp"
+            android:layout_margin="20dp"
             android:text="+"
-            android:textSize="50dp" />
+            android:textSize="50dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="300dp"
+            tools:layout_editor_absoluteY="310dp" />
+
+
     </TableRow>
 
     <TableRow
-
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
         android:layout_width="match_parent"
-        android:layout_height="100dp">
+        android:layout_height="73dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="418dp">
 
         <Button
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
             android:id="@+id/btnUbah"
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:text="ubah"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="418dp"
+            tools:ignore="MissingConstraints" />
+
 
         <Button
+            android:layout_margin="20dp"
             android:id="@+id/btnReset"
             android:layout_width="100dp"
             android:layout_height="50dp"
+            android:layout_gravity="center"
             android:text="reset"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="254dp"
+            tools:layout_editor_absoluteY="429dp" />
 
     </TableRow>
 
-
     <Button
+        android:paddingBottom="10dp"
         android:id="@+id/btnExit"
         android:layout_width="100dp"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_gravity="center"
+
+        android:gravity="center"
         android:text="exit"
-        android:textSize="20dp" />
+        android:textSize="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="500dp"
+        tools:layout_editor_absoluteY="550dp" />
+
 
 </LinearLayout>
