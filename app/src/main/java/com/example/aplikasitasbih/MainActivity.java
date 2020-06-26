@@ -10,9 +10,8 @@ public class MainActivity extends AppCompatActivity {
     int oldValue;
     int count = 0;
     private Button btnKurang, btnTambah, btnReset, btnUbah;
-    private TextView hasilHitung,textUbah, txtper;
+    private TextView hasilHitung, textUbah, txtper;
     int i = 0;
-
 
 
     @Override
@@ -26,13 +25,16 @@ public class MainActivity extends AppCompatActivity {
         btnReset = findViewById(R.id.btnReset);
         textUbah = (TextView) findViewById(R.id.perberapa);
         btnUbah = findViewById(R.id.btnUbah);
-        txtper=findViewById(R.id.per);
+        txtper = findViewById(R.id.per);
 
 
         btnKurang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 count--;
+                if (count < 0) {
+                    count = 0;
+                }
                 hasilHitung.setText(Integer.toString(count));
             }
         });
@@ -58,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (i == 0) {
-                    textUbah.setText("33") ;
+                    textUbah.setText("33");
                     btnUbah.setText("33");
                     txtper.setText("/");
                     hasilHitung.setText("0");
@@ -69,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
                     txtper.setText("/");
                     hasilHitung.setText("0");
                     i = 2;
-                } else if (i ==2 ){
+                } else if (i == 2) {
                     textUbah.setText("");
                     btnUbah.setText("~");
                     txtper.setText("");
