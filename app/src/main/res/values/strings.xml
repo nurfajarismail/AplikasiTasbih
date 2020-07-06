@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">AplikasiTasbih</string>
+    <string name="subhanallah">Subhanallah</string>
+    <string name="Alhamdulillah">Alhamdulillah</string>
+    <string name="astagfitullah">Allahuakbar</string>
+    <string name="dzikir">Dzikir sendiri</string>
+
+
 </resources>

@@ -1,150 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="bottom|center_horizontal"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="203dp"
-        android:layout_gravity="center"
+    <TextView
         android:layout_margin="20dp"
-        android:gravity="center"
+        android:layout_gravity="center"
         android:textAlignment="center"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="200dp">
-
-        <TextView
-            android:id="@+id/hasil"
-            android:layout_width="wrap_content"
-            android:layout_height="200dp"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="0"
-            android:textSize="100dp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="149dp"
-            tools:layout_editor_absoluteY="0dp" />
-        <TextView
-            android:id="@+id/per"
-            android:layout_width="wrap_content"
-            android:layout_height="200dp"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="/"
-            android:textSize="100dp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="149dp"
-            tools:layout_editor_absoluteY="0dp" />
-        <TextView
-            android:id="@+id/perberapa"
-            android:layout_width="wrap_content"
-            android:layout_height="200dp"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="33"
-            android:textSize="100dp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="149dp"
-            tools:layout_editor_absoluteY="0dp" />
-
-
-    </TableRow>
-
-
-    <TableRow
         android:layout_width="match_parent"
-        android:layout_height="203dp"
-        android:layout_gravity="center"
-        android:layout_margin="20dp"
-        android:gravity="center"
-        android:textAlignment="center"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="200dp">
-
-        <Button
-            android:id="@+id/btnKurang"
-            android:layout_width="135dp"
-            android:layout_height="175dp"
-            android:layout_margin="20dp"
-            android:text="-"
-            android:textSize="50dp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="49dp"
-            tools:layout_editor_absoluteY="275dp" />
-
-        <Button
-            android:id="@+id/btnTambah"
-            android:layout_width="135dp"
-            android:layout_height="175dp"
-            android:layout_margin="20dp"
-            android:text="+"
-            android:textSize="50dp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="300dp"
-            tools:layout_editor_absoluteY="310dp" />
+        android:layout_height="wrap_content"
+        android:text="Daftar Dzikir"
+        android:fontFamily="serif"
+        android:textSize="50dp"/>
 
 
-    </TableRow>
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="73dp"
-        android:layout_gravity="center"
-        android:layout_margin="20dp"
-        android:gravity="center"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="418dp">
-
-        <Button
-            android:id="@+id/btnUbah"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:layout_margin="20dp"
-            android:text="ubah"
-            android:textSize="20dp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="59dp"
-            tools:layout_editor_absoluteY="418dp" />
-
-
-        <Button
-            android:id="@+id/btnReset"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:layout_margin="20dp"
-            android:text="reset"
-            android:textSize="20dp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="254dp"
-            tools:layout_editor_absoluteY="429dp" />
-
-    </TableRow>
+   <Button
+       android:padding="20dp"
+       android:layout_margin="20dp"
+       android:id="@+id/satu"
+       android:layout_gravity="center"
+       android:layout_width="300dp"
+       android:layout_height="wrap_content"
+       android:text="@string/subhanallah"
+       android:fontFamily="serif"
+       android:textSize="25dp"/>
 
     <Button
-        android:id="@+id/btnExit"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:padding="20dp"
+        android:layout_margin="20dp"
+        android:id="@+id/dua"
         android:layout_gravity="center"
-        android:gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Alhamdulillah"
+        android:fontFamily="serif"
+        android:textSize="25dp"/>
+    <Button
+        android:padding="20dp"
+        android:layout_margin="20dp"
+        android:id="@+id/tiga"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/astagfitullah"
+        android:fontFamily="serif"
+        android:textSize="25dp"/>
+    <Button
+        android:padding="20dp"
+        android:layout_margin="20dp"
+        android:id="@+id/empat"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/dzikir"
+        android:fontFamily="serif"
+        android:textSize="25dp"/>
 
-        android:paddingBottom="10dp"
-        android:text="exit"
-        android:textSize="20dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="500dp"
-        tools:layout_editor_absoluteY="550dp" />
+
+
 
 
 </LinearLayout>
